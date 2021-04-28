@@ -18,7 +18,7 @@ L Device:R_US R2
 U 1 1 5DB73DFD
 P 2550 7000
 F 0 "R2" H 2620 7046 50  0000 L CNN
-F 1 "1K" H 2620 6955 50  0000 L CNN
+F 1 "2K" H 2620 6955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 7000 50  0001 C CNN
 F 3 "~" H 2550 7000 50  0001 C CNN
 	1    2550 7000
@@ -68,7 +68,7 @@ L Device:R_US R5
 U 1 1 5FA5217F
 P 3250 7000
 F 0 "R5" H 3320 7046 50  0000 L CNN
-F 1 "1K" H 3320 6955 50  0000 L CNN
+F 1 "2K" H 3320 6955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3180 7000 50  0001 C CNN
 F 3 "~" H 3250 7000 50  0001 C CNN
 	1    3250 7000
@@ -1218,4 +1218,10 @@ Wire Wire Line
 Connection ~ 5350 3500
 Wire Wire Line
 	5350 2400 7500 2400
+Text Notes 3350 7400 0    59   ~ 0
+DNI
+Text Notes 3300 6900 0    59   ~ 0
+DNI
+Text Notes 6300 6650 0    75   ~ 0
+Note: The Ready/~Run~ LED indicator may load the ~Ena~ signal and \nprevent normal operation so only install experimentally and confirm\noperation of the stepper.  \n\nLED current must remain very low, within 4011 output source current\nspec. (see datasheet)
 $EndSCHEMATC
